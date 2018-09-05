@@ -469,7 +469,7 @@ var LZString = {
       if (dictionary[c]) {
         entry = dictionary[c];
       } else {
-        if (c === dictSize) {
+        if (c === dictSize && typeof w !== 'undefined') {
           entry = w + w.charAt(0);
         } else {
           return null;
